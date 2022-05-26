@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*************** start nice scroll option **********************/
+
+.get-nicer {
+  overflow: auto;
+  height: 280px;
+}
+
+/* .nice-wrapper {} */
+
+.nicescroll-rails {
+  width: 7px !important;
+  background-color: #c0c4cf;
+}
+
+.nicescroll-cursors {
+  width: 100% !important;
+  border: none !important;
+  background-color: #5f311e !important;
+  border-radius: 7px !important;
+}
+
+.jumbotron {
+  padding-top: 80px;
+}
+
+.nicescroll-rails-vr .nicescroll-cursors {
+  width: 7px;
+  background-color: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  animation: pace-stripe-animation 500ms linear infinite;
+  background-size: 20px 20px;
+}
+
+@keyframes pace-stripe-animation {
+  from { background-position-y: 0; }
+  to   { background-position-y: 100%; }
+}  
+
+
+/*************** End nice scroll option **********************/

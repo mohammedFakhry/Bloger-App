@@ -1,0 +1,95 @@
+.sidebar{
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: #fdfbfb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarTitle{
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-top: 1px solid #a7a4a4;
+    border-bottom: 1px solid #a7a4a4;
+    font-family: 'varela Round', sans-serif;
+    font-size: 12px;
+    color: #2c1f1b;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sidebarItem > img{
+    width: 90%;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.sidebarItem > p{
+    padding: 30px;
+}
+
+.sidebarList{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.sidebarListItem{
+    width: 50%;
+    color: #2c1f1b;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 15px;
+    opacity: .9;
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebarListItem:hover{
+    opacity: 1;
+}
+
+.sidebarListItem::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #c76b3a;
+    transition: all ease-in-out .5s;
+}
+.sidebarListItem:hover::before{
+    width: 50%;
+}
+
+.sidebarSochial{
+    width: 250px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarIcon{
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.sidebarIcon:hover{
+    transform: translateY(-2px);
+}
